@@ -1,0 +1,1 @@
+(()=>{"use strict";function e(){document.querySelector("main").textContent=new Date}e(),setInterval(e,1e3)})();

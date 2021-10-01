@@ -38,6 +38,12 @@ export default class Content extends Component {
         case 'clock':
           this.rootElement.appendChild(this.createClock().render());
           break;
+        case 'stopwatch':
+          break;
+        case 'countdown':
+          break;
+        case 'world':
+          break;
       }
 
       return this.rootElement;

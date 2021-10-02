@@ -3,7 +3,7 @@ export default class Component {
     this.props = props;
     this.state = state;
 
-    this.rootElement = document.createElement('div');
+    this.rootElement = null;
     this.render = () => {
       return this.rootElement;
     };

@@ -1,6 +1,7 @@
 import Component from './component';
 import Clock from './clock';
 import intervals from './intervals';
+import Stopwatch from './stopwatch';
 
 export default class Content extends Component {
   constructor(props, state) {
@@ -19,6 +20,7 @@ export default class Content extends Component {
           }).render());
           break;
         case 'stopwatch':
+          this.rootElement.appendChild(new Stopwatch({}, {}).render());
           break;
         case 'countdown':
           break;

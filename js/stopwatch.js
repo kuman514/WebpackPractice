@@ -24,7 +24,7 @@ export default class Stopwatch extends Component {
           elapsed: totalTime
         });
         this.deltaOrg = Date.now();
-      }, 1);
+      }, 10);
       intervals.addIntervalId(this.stopwatchInterval);
     };
     this.stopStopwatch = () => {

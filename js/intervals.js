@@ -8,7 +8,6 @@ const intervals = {
     intervalIds.delete(intervalId);
   },
   clearAllIntervals: () => {
-    console.log(intervalIds);
     intervalIds.forEach((intervalId) => {
       clearInterval(intervalId);
     });

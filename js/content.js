@@ -24,8 +24,6 @@ export default class Content extends Component {
           break;
         case 'countdown':
           break;
-        case 'world':
-          break;
       }
 
       return this.rootElement;

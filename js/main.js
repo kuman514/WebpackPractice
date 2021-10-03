@@ -17,7 +17,7 @@ class Main extends Component {
     };
 
     this.buttons = new Buttons({
-      modes: ['clock', 'stopwatch', 'countdown', 'world'],
+      modes: ['clock', 'stopwatch', 'countdown'],
       onClick: this.changeMode
     }, {});
 

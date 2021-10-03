@@ -16,7 +16,7 @@ export default class Buttons extends Component {
 
     this.render = () => {
       const buttons = Array.from({
-        length: 4
+        length: this.props.modes.length
       }, (_, index) => {
         const button = document.createElement('button');
         button.id = index;

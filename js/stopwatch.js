@@ -26,11 +26,19 @@ export default class Stopwatch extends Component {
         this.deltaOrg = Date.now();
       }, 10);
       intervals.addIntervalId(this.stopwatchInterval);
+
+      this.controller.setState({
+        isRunning: true
+      });
     };
     this.stopStopwatch = () => {
       if (this.stopwatchInterval) {
         intervals.stopInterval(this.stopwatchInterval);
         this.stopwatchInterval = null;
+
+        this.controller.setState({
+          isRunning: false
+        });
       }
     };
     this.resetStopwatch = () => {
@@ -44,7 +52,9 @@ export default class Stopwatch extends Component {
       onStart: this.startStopwatch,
       onStop: this.stopStopwatch,
       onReset: this.resetStopwatch
-    }, {});
+    }, {
+      isRunning: false
+    });
 
     this.rootElement = document.createElement('div');
     this.rootElement.className = 'stopwatch';

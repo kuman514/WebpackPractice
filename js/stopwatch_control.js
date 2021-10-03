@@ -22,21 +22,25 @@ export default class StopwatchControl extends Component {
     });
 
     this.render = () => {
-      const startButton = document.createElement('button');
-      startButton.id = 'stopwatch-start';
-      startButton.textContent = 'Start';
+      this.rootElement.innerText = '';
+      if (this.state.isRunning) {
+        const stopButton = document.createElement('button');
+        stopButton.id = 'stopwatch-stop';
+        stopButton.textContent = 'Stop';
 
-      const stopButton = document.createElement('button');
-      stopButton.id = 'stopwatch-stop';
-      stopButton.textContent = 'Stop';
+        this.rootElement.appendChild(stopButton);
+      } else {
+        const startButton = document.createElement('button');
+        startButton.id = 'stopwatch-start';
+        startButton.textContent = 'Start';
+        
+        const resetButton = document.createElement('button');
+        resetButton.id = 'stopwatch-reset';
+        resetButton.textContent = 'Reset';
 
-      const resetButton = document.createElement('button');
-      resetButton.id = 'stopwatch-reset';
-      resetButton.textContent = 'Reset';
-
-      this.rootElement.appendChild(startButton);
-      this.rootElement.appendChild(stopButton);
-      this.rootElement.appendChild(resetButton);
+        this.rootElement.appendChild(startButton);
+        this.rootElement.appendChild(resetButton);
+      }
 
       return this.rootElement;
     }

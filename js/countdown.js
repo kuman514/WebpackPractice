@@ -22,9 +22,12 @@ export default class Countdown extends Component {
         const deltaTime = deltaDst - this.deltaOrg;
         const totalTime = this.timestamp.state.remaining - deltaTime;
         this.timestamp.setState({
-          remaining: totalTime
+          remaining: ((totalTime > 0) ? totalTime : 0)
         });
         this.deltaOrg = Date.now();
+        if (this.timestamp.state.remaining <= 0) {
+          this.stopCountdown();
+        }
       }, 10);
       intervals.addIntervalId(this.countdownInterval);
 

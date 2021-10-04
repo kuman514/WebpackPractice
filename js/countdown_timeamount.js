@@ -11,16 +11,19 @@ export default class CountdownTimeAmount extends Component {
     // Elements
     this.hourSetter = document.createElement('input');
     this.hourSetter.type = 'number';
+    this.hourSetter.value = '0';
     this.hourSetter.min = '0';
     this.hourSetter.max = '99';
 
     this.minuteSetter = document.createElement('input');
     this.minuteSetter.type = 'number';
+    this.minuteSetter.value = '0';
     this.minuteSetter.min = '0';
     this.minuteSetter.max = '59';
 
     this.secondSetter = document.createElement('input');
     this.secondSetter.type = 'number';
+    this.secondSetter.value = '0';
     this.secondSetter.min = '0';
     this.secondSetter.max = '59';
 
@@ -36,6 +39,7 @@ export default class CountdownTimeAmount extends Component {
     this.rootElement = document.createElement('div');
     this.rootElement.className = 'countdown-timeamount';
     this.rootElement.addEventListener('change', () => {
+      this.props.onChange();
     });
 
     this.render = () => {

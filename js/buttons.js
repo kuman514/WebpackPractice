@@ -8,7 +8,7 @@ export default class Buttons extends Component {
     this.rootElement.className = 'buttons';
     this.rootElement.addEventListener('click', (event) => {
       const parsedId = parseInt(event.target.id);
-      if (parsedId === null || parsedId === undefined) {
+      if (parsedId === null || parsedId === undefined || Number.isNaN(parsedId)) {
         return;
       }
       this.props.onClick(this.props.modes[parsedId]);

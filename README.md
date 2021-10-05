@@ -1,13 +1,21 @@
-# 메모 목적 임시 작성: 번들 방법
+# WebpackTimer
+현재시각 + 스톱워치 + 카운트다운 기능이 있는 간단한 웹 타이머 앱을 직접 만들어, Webpack을 이용하여 JS 모듈과 CSS 모듈을 번들한 뒤, gh-pages 전용 디렉토리(dist) 및 branch를 만들어 배포하는 개인 프로젝트.   
+(앱 사용해보기)
 
-1. `npm init -y`
-2. `npm install webpack webpack-cli --save-dev`
-3. `package.json`의 `"scripts"`에 `"build": "webpack --config webpack.config.js"`와 `"build-prod": "webpack -p --config webpack.config.js"` 추가
-4. `npm run build`로 빌드가 되는지 확인
+# Purpose (프로젝트의 목적)
+- Webpack 학습 (JS 모듈 번들, CSS 로더 등등)
+- (개인적 목적은 추후 작성)
 
-# Github Pages 배포 방법
+# Features (구현에 사용된 요소)
+- Webpack의 entry와 output을 이용한 JS 모듈 번들화
+- gh-pages를 이용한 배포 전용 branch 생성 및 빌드 배포
+- 속성 props, 상태 state, 상태 변경 즉시 재렌더링 하는 setState 함수를 VanillaJS로 만들기
 
-1. `npm install gh-pages --save-dev`
-2. `package.json`의 `"scripts"`에 `"predeploy": "npm run build"`와 `"deploy": "gh-pages -d (배포 대상 폴더)"` 추가
-3. `package.json`에 `"homepage": "https://(깃허브 아이디).github.io/(리포지토리 이름)/"` 추가
-4. `npm run deploy` 명령 실행 후 `https://(깃허브 아이디).github.io/(리포지토리 이름)/` 접속 확인
+# Updates (업데이트)
+- 10-05-2021: 초기 배포
+
+# Issues (오류)
+- (아직 보고된 오류가 없습니다.)
+
+# Feedbacks (피드백)
+- (아직 보고된 피드백이 없습니다.)

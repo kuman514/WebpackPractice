@@ -1,6 +1,7 @@
 import Component from './component';
 import Content from './content';
 import Buttons from './buttons';
+import style from '../css/style.module.css';
 
 class Main extends Component {
   constructor(props, state) {

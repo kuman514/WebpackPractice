@@ -1,3 +1,24 @@
-main {
+body {
+  background-color: white;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+  all: unset;
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  transition: all 50ms linear;
+}
+
+button:hover {
+  cursor: pointer;
   background-color: greenyellow;
 }

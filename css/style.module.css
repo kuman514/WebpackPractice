@@ -16,9 +16,21 @@ button {
   border-radius: 10px;
   margin: 5px;
   transition: all 50ms linear;
+  font-size: calc(10px + 2vw);
 }
 
 button:hover {
   cursor: pointer;
   background-color: greenyellow;
+}
+
+:global(.countdown-timeamount > input) {
+  width: 10vw;
+  height: 3vh;
+  font-size: calc(10px + 3vw);
+}
+
+:global(.clock), :global(.stopwatch-timestamp), :global(.countdown-timestamp) {
+  font-size: calc(10px + 3vw);
+  font-weight: bold;
 }

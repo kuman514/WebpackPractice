@@ -1,4 +1,5 @@
 import Component from './component';
+import '../css/countdown_timestamp.css';
 
 const MILLISECONDS_PER_HOUR = 3600 * 1000;
 const MILLISECONDS_PER_MINUTE = 60 * 1000;

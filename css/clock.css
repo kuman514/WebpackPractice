@@ -1,0 +1,5 @@
+.clock {
+  color: red;
+  font-size: calc(10px + 3vw);
+  font-weight: bold;
+}

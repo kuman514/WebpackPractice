@@ -1,0 +1,5 @@
+.countdown-timestamp {
+  color: gold;
+  font-size: calc(10px + 3vw);
+  font-weight: bold;
+}

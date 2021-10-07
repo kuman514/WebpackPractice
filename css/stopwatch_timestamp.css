@@ -1,0 +1,5 @@
+.stopwatch-timestamp {
+  color: blue;
+  font-size: calc(10px + 3vw);
+  font-weight: bold;
+}

@@ -1,5 +1,6 @@
 import Component from './component';
 import intervals from './intervals';
+import '../css/clock.css';
 
 export default class Clock extends Component {
   constructor(props, state) {

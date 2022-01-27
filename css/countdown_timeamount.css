@@ -1,5 +1,5 @@
 .countdown-timeamount > input {
   width: 10vw;
-  height: 3vh;
-  font-size: calc(10px + 3vw);
+  height: 5vh;
+  font-size: calc(10px + 4vh);
 }
